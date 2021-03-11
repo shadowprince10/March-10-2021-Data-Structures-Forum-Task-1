@@ -337,7 +337,9 @@ void view() // Menu 3: View Existing File Function
     Node *current = first;
     int number = 1;
 
-    system("clear");
+    // to clear the main menu screen every time we go into menu 1/2/3/4
+    // system("cls"); // Windows
+    system("clear"); // Linux / Unix
     puts("View Existing File");
     puts("--------------------------------------------");
     puts("");
@@ -355,3 +357,6 @@ void view() // Menu 3: View Existing File Function
 }
 
 // no cheating, mates ;)
+
+
+
