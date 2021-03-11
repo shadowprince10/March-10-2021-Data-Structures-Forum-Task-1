@@ -27,7 +27,7 @@ void registerNewDocument() // Menu 1: Register New Document Function
     // char docDomain[255];
     int docSize;
 
-    clearScreen();
+    clearScreen(); // to clear the main menu screen every time we go into menu 1/2/3/4
     puts("Register New Document");
     puts("--------------------------------------------");
     puts("");
@@ -56,7 +56,7 @@ void removeDocument() // Menu 2: Remove Document Function
 {
     char deletedFileName[255];
         
-    clearScreen();
+    clearScreen(); // to clear the main menu screen every time we go into menu 1/2/3/4
     printf("Input document name: ");
     scanf("%[^\n]", deletedFileName); getchar(); // if I don't add getchar(), it won't show any error messages
     deleteDocument(deletedFileName);
@@ -78,7 +78,7 @@ void viewExistingFile() // Menu 3: View Existing File Function
 
 void exitFileManager() // Menu 4: Exit Function
 {
-    clearScreen();
+    clearScreen(); // to clear the main menu screen every time we go into menu 1/2/3/4
     popAll(); // remove all stored file data from memory
 }
 
@@ -91,7 +91,7 @@ void mainMenu()
 
     while (isValid) // this is taught by a lab assistant when I join pretraining. What I understand from him is that it's used to display or run the program as long as it's still valid. Whenever we exit every menu, the main menu option screen will still be displayed because it's still valid.
     {
-        clearScreen();
+        clearScreen(); // to clear screen (screen in every menu option) whenever we exit menus
         puts("1. Register New Document");
         puts("2. Remove Document");
         puts("3. View Existing File");
