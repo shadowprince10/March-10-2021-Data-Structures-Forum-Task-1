@@ -49,7 +49,7 @@ void registerNewDocument() // Menu 1: Register New Document Function
     puts("Success registered new document!");
     puts("");
     printf("Press enter to continue...");
-    getchar(); // to catch one enter key
+    getchar(); // to catch one enter key from user
 }
 
 void removeDocument() // Menu 2: Remove Document Function
@@ -62,7 +62,7 @@ void removeDocument() // Menu 2: Remove Document Function
     deleteDocument(deletedFileName);
     puts("");
     printf("Press enter to continue...");
-    getchar(); // to catch one enter key
+    getchar(); // to catch one enter key from user
 }
 
 /*
@@ -79,7 +79,7 @@ void viewExistingFile() // Menu 3: View Existing File Function
 void exitFileManager() // Menu 4: Exit Function
 {
     clearScreen();
-    popAll();
+    popAll(); // remove all stored file data from memory
 }
 
 
@@ -125,7 +125,7 @@ void mainMenu()
         {
             exitFileManager();
             isValid = false; // so that the program won't be runned or displayed anymore
-            getchar(); // to catch one enter key
+            getchar(); // to catch one enter key from user
             exit(0); // exit with no error
         }
     }
