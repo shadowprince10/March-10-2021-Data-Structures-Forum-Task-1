@@ -124,7 +124,7 @@ void mainMenu()
         else // Menu 4: Exit
         {
             exitFileManager();
-            isValid = false; // so that the program won't be runned or displayed anymore
+            isValid = false; // so that the program won't be ran or displayed anymore
             getchar(); // to catch one enter key from user
             exit(0); // exit with no error
         }
